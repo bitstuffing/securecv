@@ -1,7 +1,7 @@
 /*********************************************************************************************
-Project:      Sakura - Online Resume / CV HTML Template
-Version:      1.0
-Last change:  30/10/2017
+Based on: Sakura HTML Template
+Adapted by: bit
+Last update: April/2019
 
 [ CSS Structure ]
 
@@ -204,18 +204,18 @@ a (active):	#FFF (White)
   transform: rotate(0deg);
 }
 
-.kayoAlert {
+.bitAlert {
   font-size: 13px;
   margin: 5px 0 0;
   font-weight: bold;
   text-transform: capitalize;
 }
 
-.kayoError {
+.bitError {
   color: #ff9191;
 }
 
-.kayoSuccess {
+.bitSuccess {
   margin: 0 0 10px;
   background: rgba(24, 148, 255, 0.5);
   padding: 12px 24px;
@@ -930,7 +930,7 @@ body {
   text-transform: uppercase;
   font-size: 20px;
 }
-.home .intro-section .mr-kayo {
+.home .intro-section .mr-bit {
   font-size: 90px;
   margin: 10px 0;
   font-weight: 900;
@@ -2753,7 +2753,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .sakura-demo2 .home .intro-section .mr-kayo {
+  .sakura-demo2 .home .intro-section .mr-bit {
     font-size: 55px;
     margin: 10px 0;
   }
@@ -2803,7 +2803,7 @@ body {
     top: 0;
   }
 
-  .home .intro-section .mr-kayo {
+  .home .intro-section .mr-bit {
     font-size: 30px;
     letter-spacing: 1px;
     margin: 7px 0;
