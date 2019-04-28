@@ -12,27 +12,6 @@ let crypto = (function(){
     }
 })();
 
-function buildMainTag(){
-  $("#mainTag").append(getMainContent("Profesor Hubert Farnsworth"));
-}
-
-function getMainContent(name){
-  var content = '<section class="full-page" id="home">';
-  content += '<div class="home overlay-container">';
-  content += '<div class="overlay">';
-  content += '<div class="intro-section bit-container display-table">';
-  content += '<div class="display-table-cell">';
-  content += '<h3 class="bit-hello">Hola, soy</h3>';
-  content += '<h1 class="mr-bit">'+name+'</h1>';
-  content += '<h3 class="bit-work-description">&nbsp;<span class="bit-work"></span></h3>';
-  content += '</div>';
-  content += '</div>';
-  content += '</div>';
-  content += '</div>';
-  content += '</section>';
-  return content;
-}
-
 function readTextFile(file){
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
@@ -53,16 +32,23 @@ function buildFromJsonContent(content){
       case "home":
         buildHome(v);
         break;
-      case "aboutme":
-        buildHome(v);
+      case "aboutMe":
+        buildAboutMe(v);
+        $(".aboutMe").niceScroll();
         break;
     }
   });
+
+}
+
+function buildAboutMe(map){
+  var aboutMeSection = buildMap(map);
+  $("#mainTag").append(aboutMeSection);
 }
 
 function buildHome(map){
-  var content = buildMap(map);
-  $("#mainTag").append(content);
+  var homeSection = buildMap(map);
+  $("#mainTag").append(homeSection);
 }
 
 function buildMap(map){
@@ -119,7 +105,6 @@ $(document).ready(function(){
     });
     $("#dialog").dialog("close");
     $(".loading").fadeOut("slow");
-    //buildMainTag();
   });
 
   $("#dialog").dialog({
