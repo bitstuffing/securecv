@@ -20,17 +20,79 @@ function getMainContent(name){
   var content = '<section class="full-page" id="home">';
   content += '<div class="home overlay-container">';
   content += '<div class="overlay">';
-  content += '<div class="intro-section kayo-container display-table">';
+  content += '<div class="intro-section bit-container display-table">';
   content += '<div class="display-table-cell">';
-  content += '<h3 class="kayo-hello">Hola, soy</h3>';
-  content += '<h1 class="mr-kayo">'+name+'</h1>';
-  content += '<h3 class="kayo-work-description">&nbsp;<span class="kayo-work"></span></h3>';
+  content += '<h3 class="bit-hello">Hola, soy</h3>';
+  content += '<h1 class="mr-bit">'+name+'</h1>';
+  content += '<h3 class="bit-work-description">&nbsp;<span class="bit-work"></span></h3>';
   content += '</div>';
   content += '</div>';
   content += '</div>';
   content += '</div>';
   content += '</section>';
   return content;
+}
+
+function readTextFile(file){
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function (){
+        if(rawFile.readyState === 4){
+            if(rawFile.status === 200 || rawFile.status == 0){
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+function buildFromJsonContent(content){
+  $.each(content,function(k,v){
+    switch(k){
+      case "home":
+        buildHome(v);
+        break;
+      case "aboutme":
+        buildHome(v);
+        break;
+    }
+  });
+}
+
+function buildHome(map){
+  var content = buildMap(map);
+  $("#mainTag").append(content);
+}
+
+function buildMap(map){
+  var built;
+  for (var key in map) {
+    console.log(key + " -> " + map[key]);
+    switch(key){
+      case "content":
+        console.log("recursive -->> ");
+        for (var index in map[key]) {
+          console.log("index -->> "+index);
+          var content = buildMap(map[key][index]);
+          built.append(content);
+        }
+        break;
+      case "type":
+        built = $("<"+map[key]+"/>");
+        break;
+      case "class":
+        built.addClass(map[key]);
+        break;
+      case "stype":
+        built.css(map[key]);
+        break;
+      case "text":
+        built.text(map[key]);
+        break;
+    }
+  }
+  return built;
 }
 
 
@@ -48,10 +110,16 @@ $(document).ready(function(){
 
   $("#passwordButton").click(function(){
     console.log(crypto.encryptMessage('Welcome to AES !','your_password'));
-    console.log(crypto.decryptMessage('U2FsdGVkX1/S5oc9WgsNyZb8TJHsuL7+p4yArjEpOCYgDTUdkVxkmr+E+NdJmro9','your_password'))
+    console.log(crypto.decryptMessage('U2FsdGVkX1/S5oc9WgsNyZb8TJHsuL7+p4yArjEpOCYgDTUdkVxkmr+E+NdJmro9','your_password'));
+    //var file = readTextFile("securecv.json");
+    //alert(file);
+    $.get("securecv.json",function(content){
+      var jsonContent = $.parseJSON(content);
+      buildFromJsonContent(jsonContent);
+    });
     $("#dialog").dialog("close");
     $(".loading").fadeOut("slow");
-    buildMainTag();
+    //buildMainTag();
   });
 
   $("#dialog").dialog({
