@@ -516,11 +516,11 @@ body {
   vertical-align: middle;
 }
 
-.mrbit-main-title {
+.bit-main-title {
   text-align: center;
   padding-bottom: 60px;
 }
-.mrbit-main-title h2 {
+.bit-main-title h2 {
   font-size: 24px;
   text-transform: uppercase;
   display: inline-block;
@@ -528,14 +528,14 @@ body {
   font-weight: bold;
   letter-spacing: 0.7px;
 }
-.mrbit-main-title h2 .bit-line {
+.bit-main-title h2 .bit-line {
   display: block;
   width: 100%;
   margin: 15px auto 10px;
   position: relative;
   border-bottom: 2px solid #FFF;
 }
-.mrbit-main-title h2 .bit-line:after, .mrbit-main-title h2 .bit-line:before {
+.bit-main-title h2 .bit-line:after, .bit-main-title h2 .bit-line:before {
   content: '';
   display: inline-block;
   width: 15px;
@@ -548,11 +548,11 @@ body {
   transform: rotate(45deg);
   position: absolute;
 }
-.mrbit-main-title h2 .bit-line:after {
+.bit-main-title h2 .bit-line:after {
   right: -15px;
   bottom: -8px;
 }
-.mrbit-main-title h2 .bit-line:before {
+.bit-main-title h2 .bit-line:before {
   left: -15px;
   bottom: -8px;
 }
@@ -1069,7 +1069,7 @@ body {
 .testimonials {
   padding: 90px 0 80px;
 }
-.testimonials .mrbit-main-title {
+.testimonials .bit-main-title {
   padding-bottom: 45px;
 }
 .testimonials .title-name {
@@ -2790,11 +2790,11 @@ body {
     margin-top: 12px;
   }
 
-  .mrbit-main-title h2 {
+  .bit-main-title h2 {
     font-size: 16px;
   }
 
-  .mrbit-main-title {
+  .bit-main-title {
     padding-bottom: 40px;
   }
 
@@ -2859,7 +2859,7 @@ body {
   .testimonials {
     padding: 60px 0 50px;
   }
-  .testimonials .mrbit-main-title {
+  .testimonials .bit-main-title {
     padding-bottom: 30px;
   }
   .testimonials .testi-user-info h3 {
