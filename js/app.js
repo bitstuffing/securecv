@@ -12,7 +12,7 @@ let crypto = (function(){
     }
 })();
 
-function readTextFile(file){
+function readTextFile(file){ //ajax without jquery for internet explorer issues
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function (){
@@ -34,32 +34,91 @@ function buildFromJsonContent(content){
         break;
       case "aboutMe":
         buildAboutMe(v);
-        $(".aboutMe").niceScroll();
+        break;
+      case 'portfolio':
+        buildPorfolio(v);
+        break;
+      case 'resume':
+        buildResume(v)
+        break;
+      case 'blog':
+        buildBlog(v);
+        break;
+      case 'contactme':
+        buildContact(v);
         break;
     }
   });
-
-}
-
-function buildAboutMe(map){
-  var aboutMeSection = buildMap(map);
-  $("#mainTag").append(aboutMeSection);
+  var scrollBoxes = $(".full-page > .overlay-container");
+  scrollBoxes.niceScroll(); //TODO configure from json input
 }
 
 function buildHome(map){
   var homeSection = buildMap(map);
   $("#mainTag").append(homeSection);
+  var sectionNav = buildSectionNav('home',true);
+  $("#ulSectionNav").append(sectionNav);
+}
+
+function buildAboutMe(map){
+  var aboutMeSection = buildMap(map);
+  $("#mainTag").append(aboutMeSection);
+  var sectionNav = buildSectionNav('aboutMe',false);
+  $("#ulSectionNav").append(sectionNav);
+}
+
+function buildPorfolio(v){
+  var sectionNav = buildSectionNav('portfolio',false);
+  $("#ulSectionNav").append(sectionNav);
+}
+
+function buildResume(v){
+  var sectionNav = buildSectionNav('resume',false);
+  $("#ulSectionNav").append(sectionNav);
+}
+
+function buildBlog(v){
+  var sectionNav = buildSectionNav('blog',false);
+  $("#ulSectionNav").append(sectionNav);
+}
+
+function buildContact(v){
+  var sectionNav = buildSectionNav('contact',false);
+  $("#ulSectionNav").append(sectionNav);
+}
+
+function buildSectionNav(name,active){
+  var section = '<li '+(active?'class="active"':'')+'>';
+  switch(name){
+    case 'home':
+      section +='<a href="#home"><i class="fa fa-home"></i>Home</a>';
+      break;
+    case 'aboutMe':
+      section +='<a href="#aboutMe"><i class="glyphicon glyphicon-user"></i>About Me</a>';
+      break;
+    case 'portfolio':
+      section +='<a href="#portfolio"><i class="fa fa-laptop"></i>Portfolio</a>';
+      break;
+    case 'resume':
+      section +='<a href="#resume"><i class="glyphicon glyphicon-leaf"></i>Resume</a>';
+      break;
+    case 'blog':
+      section +='<a href="#blog"><i class="fa fa-newspaper-o"></i>Blog</a>';
+      break;
+    case 'contact':
+      section +='<a href="#contactme"><i class="glyphicon glyphicon-headphones"></i>Contact Me</a>';
+      break;
+  }
+  section+= '</li>';
+  return section;
 }
 
 function buildMap(map){
   var built;
   for (var key in map) {
-    console.log(key + " -> " + map[key]);
     switch(key){
       case "content":
-        console.log("recursive -->> ");
         for (var index in map[key]) {
-          console.log("index -->> "+index);
           var content = buildMap(map[key][index]);
           built.append(content);
         }
@@ -84,12 +143,6 @@ function buildMap(map){
 
 $(document).ready(function(){
 
-  $(".bit-links a,.scrollLink").click(function(e){
-    e.preventDefault();
-    $(".bit-links li").removeClass("active");
-    $(this).parent().addClass("active");
-  });
-
   $(".menu-toggle").on("click", function () {
       $("body").toggleClass('mobile-menu-active');
   });
@@ -102,6 +155,22 @@ $(document).ready(function(){
     $.get("securecv.json",function(content){
       var jsonContent = $.parseJSON(content);
       buildFromJsonContent(jsonContent);
+
+      //events TODO configure
+      $(".bit-links a,.scrollLink").click(function(e){
+        e.preventDefault();
+        $(".bit-links li").removeClass("active");
+        $(this).parent().addClass("active");
+        var target = e.target.href;
+        target = target.substring(target.indexOf("#")+1);
+        $('html, body').animate({
+          scrollTop: $("section > ."+target).offset().top
+        }, 800, function(){
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          //window.location.hash = "#"+target;
+        });
+      });
+
     });
     $("#dialog").dialog("close");
     $(".loading").fadeOut("slow");
