@@ -29,6 +29,9 @@ function readTextFile(file){ //ajax without jquery for internet explorer issues
 function buildFromJsonContent(content){
   $.each(content,function(k,v){
     switch(k){
+      case "userinfo":
+        buildUserInfo(v);
+        break;
       case "home":
         buildHome(v);
         break;
@@ -51,6 +54,11 @@ function buildFromJsonContent(content){
   });
   var scrollBoxes = $(".full-page > .overlay-container");
   scrollBoxes.niceScroll(); //TODO configure from json input
+}
+
+function buildUserInfo(map){
+  var userInfo = buildMap(map);
+  $("#menuTogglable").prepend(userInfo);
 }
 
 function buildHome(map){
@@ -183,7 +191,17 @@ $(document).ready(function(){
           //window.location.hash = "#"+target;
         });
       });
-      //$('.clients-slider').unslick();
+
+      $('.portfolio-sorting li').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('li').addClass('active').siblings().removeClass('active');
+        var seclector = $(this).attr('data-filter');
+        $('.grid').isotope({
+            filter: seclector
+        });
+        return false;
+      });
+
       $('.owl-carousel').owlCarousel({
           loop:true,
           margin:10,
