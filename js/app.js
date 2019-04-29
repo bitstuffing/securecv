@@ -47,7 +47,7 @@ function buildFromJsonContent(content){
       case 'blog':
         buildBlog(v);
         break;
-      case 'contactme':
+      case 'contact':
         buildContact(v);
         break;
     }
@@ -110,19 +110,19 @@ function buildSectionNav(name,active){
       section +='<a href="#home"><i class="fa fa-home"></i>Home</a>';
       break;
     case 'aboutMe':
-      section +='<a href="#aboutMe"><i class="glyphicon glyphicon-user"></i>About Me</a>';
+      section +='<a href="#aboutMe"><i class="glyphicon glyphicon-user"></i>Sobre mí</a>';
       break;
     case 'portfolio':
       section +='<a href="#portfolio"><i class="fa fa-laptop"></i>Portfolio</a>';
       break;
     case 'resume':
-      section +='<a href="#resume"><i class="glyphicon glyphicon-leaf"></i>Resume</a>';
+      section +='<a href="#resume"><i class="glyphicon glyphicon-leaf"></i>Resumen</a>';
       break;
     case 'blog':
       section +='<a href="#blog"><i class="fa fa-newspaper-o"></i>Blog</a>';
       break;
     case 'contact':
-      section +='<a href="#contactme"><i class="glyphicon glyphicon-headphones"></i>Contact Me</a>';
+      section +='<a href="#contact"><i class="glyphicon glyphicon-headphones"></i>Contacto</a>';
       break;
   }
   section+= '</li>';
@@ -169,12 +169,13 @@ $(document).ready(function(){
   });
 
   $("#passwordButton").click(function(){
-    console.log(crypto.encryptMessage('Welcome to AES !','your_password'));
-    console.log(crypto.decryptMessage('U2FsdGVkX1/S5oc9WgsNyZb8TJHsuL7+p4yArjEpOCYgDTUdkVxkmr+E+NdJmro9','your_password'));
-    //var file = readTextFile("securecv.json");
-    //alert(file);
+
     $.get("securecv.json",function(content){
-      var jsonContent = $.parseJSON(content);
+      console.log("decoding...");
+      var password = $("#password").val();
+      var decrypted = crypto.decryptMessage(content,password);
+      console.log("done, perfect!");
+      var jsonContent = $.parseJSON(decrypted);
       buildFromJsonContent(jsonContent);
 
       var parentHeight = $(".home").parent().css("height");
@@ -187,10 +188,10 @@ $(document).ready(function(){
         $(this).parent().addClass("active");
         var target = e.target.href;
         target = target.substring(target.indexOf("#")+1);
-        //$("body").toggleClass('mobile-menu-active');
+
         $(".menu-toggle").trigger("click");
         $('html, body').animate({
-          scrollTop: $("section > ."+target).offset().top
+          scrollTop: $("section > ."+target).offset().top -25
         }, 800, function(){
           // Add hash (#) to URL when done scrolling (default click behavior)
           //window.location.hash = "#"+target;
@@ -228,8 +229,9 @@ $(document).ready(function(){
 
     });
     $(window).on("resize",function(){
+      //apply fix for home section
       var parentHeight = $(".home").parent().css("height");
-      $(".home").css("height",parentHeight);
+      $(".home").css("height",parseInt(parentHeight)-25);
     });
     $("#dialog").dialog("close");
     $(".loading").fadeOut("slow");
