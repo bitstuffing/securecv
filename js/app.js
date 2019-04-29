@@ -67,22 +67,30 @@ function buildAboutMe(map){
   $("#ulSectionNav").append(sectionNav);
 }
 
-function buildPorfolio(v){
+function buildPorfolio(map){
+  var porfolio = buildMap(map);
+  $("#mainTag").append(porfolio);
   var sectionNav = buildSectionNav('portfolio',false);
   $("#ulSectionNav").append(sectionNav);
 }
 
-function buildResume(v){
+function buildResume(map){
+  var resume = buildMap(map);
+  $("#mainTag").append(resume);
   var sectionNav = buildSectionNav('resume',false);
   $("#ulSectionNav").append(sectionNav);
 }
 
-function buildBlog(v){
+function buildBlog(map){
+  var blog = buildMap(map);
+  $("#mainTag").append(blog);
   var sectionNav = buildSectionNav('blog',false);
   $("#ulSectionNav").append(sectionNav);
 }
 
-function buildContact(v){
+function buildContact(map){
+  var contact = buildMap(map);
+  $("#mainTag").append(contact);
   var sectionNav = buildSectionNav('contact',false);
   $("#ulSectionNav").append(sectionNav);
 }
@@ -135,6 +143,11 @@ function buildMap(map){
       case "text":
         built.text(map[key]);
         break;
+      case "src":
+      case "alt":
+      default: //any key="value"
+        built.attr(key,map[key]);
+        break;
     }
   }
   return built;
@@ -169,6 +182,24 @@ $(document).ready(function(){
           // Add hash (#) to URL when done scrolling (default click behavior)
           //window.location.hash = "#"+target;
         });
+      });
+      //$('.clients-slider').unslick();
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          lazyLoad:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
       });
 
     });
