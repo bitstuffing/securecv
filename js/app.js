@@ -203,6 +203,10 @@ $(document).ready(function(){
       });
 
     });
+    $(window).on("resize",function(){
+      var parentHeight = $(".home").parent().css("height");
+      $(".home").css("height",parentHeight);
+    });
     $("#dialog").dialog("close");
     $(".loading").fadeOut("slow");
   });
