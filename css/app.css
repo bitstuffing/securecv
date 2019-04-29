@@ -1,68 +1,3 @@
-/*********************************************************************************************
-Based on: Sakura HTML Template
-Adapted by: bit
-Last update: April/2019
-
-[ CSS Structure ]
-
-1. Color Codes
-2. general Style
-3. aside
-    3.1 Control Bar
-    3.2 Slide Menu
-4. Home
-5. About Me
-    5.1 About Introduction
-    5.2 My Information
-    5.3 My Service
-    5.4 Client
-    5.5 Facts About Me
-    5.6 Testimonials
-6. Portfolio
-    6.1 Portfolio Introduction
-    6.2 My Work
-7. Resume
-    7.1 Resume Introduction
-    7.2 Education & Experience
-    7.3 My Skills
-8. Blog
-9. Contact
-    9.1 Contact Introduction
-    9.2 Contact Information
-    9.3 Contact Form
-10. loading
-11. NavBar
-12. Footer
-13. Sakura Demo2
-14. Responsive
-    14.1. Screen Width 992px
-    14.2. Screen Width 768px
-
-/*------------------------------------------------------------------------------------------*/
-/* 1. Color Codes */
-/*-----------------
-
-***************** Background Color *****************
-
-[ Body, content Boxes ]   ===> #2c3e50
-
-******************** Text Color ********************
-
-[ Headings h1 & h2 & h3 ]   ===> #FFF
-[ Content Color ]           ===> #FFF
-[ Experience Headings ]     ===> #1894ff
-[ Paragraphs ]              ===> #BBB
-
-[ Portfolio Filter Links ]
-a (standard):	#BBB (Gray)
-a (hover):	#1894ff (blue)
-a (active):	#1894ff (blue)
-
-[ SideMenu Links ]
-a (standard):	#869cb1 (Gray blue)
-a (hover):	#FFF (White)
-a (active):	#FFF (White)
-------------------------------------------------------------------*/
 .main-content-color-txt, .bit-btn-1, .bit-btn-1:hover, .bit-btn-1:focus, .bit-btn-1:active, .main-page-content > section, .control-bar, .slide-menu-container .slide-menu .bit-user-info .social-media a, .slide-menu-container .slide-menu .bit-user-info .bit-links-toggle span, .slide-menu-container .slide-menu.bit-menu-style-2 .bit-links a:hover, .slide-menu-container .slide-menu.bit-menu-style-2 .bit-links li.active a, .bit-facts-about-me .bit-info-list .single-info .info-icon, .bit-facts-about-me .bit-info-list .single-info .info-icon i, .testimonials .testi-user-info h3, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info, .bit-skills .soft-skills .progress-container .progress-val, .normal-post .entry-header .post-category a, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post .entry-content .entry-post-info h4 a, .normal-post .entry-content .entry-expert .post-readMore a:hover, .normal-post .entry-footer .entry-tags a:hover, .contact-form .bit-form .form-control {
   color: #FFFFFF;
 }
@@ -3080,5 +3015,3 @@ body {
     left: 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
