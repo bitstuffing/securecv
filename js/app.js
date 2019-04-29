@@ -53,7 +53,7 @@ function buildFromJsonContent(content){
     }
   });
   var scrollBoxes = $(".full-page > .overlay-container");
-  scrollBoxes.niceScroll(); //TODO configure from json input
+  scrollBoxes.scrollbar();
 }
 
 function buildUserInfo(map){
@@ -177,6 +177,9 @@ $(document).ready(function(){
       var jsonContent = $.parseJSON(content);
       buildFromJsonContent(jsonContent);
 
+      var parentHeight = $(".home").parent().css("height");
+      $(".home").css("height",parentHeight);
+
       //events TODO configure
       $(".bit-links a,.scrollLink").click(function(e){
         e.preventDefault();
@@ -184,11 +187,14 @@ $(document).ready(function(){
         $(this).parent().addClass("active");
         var target = e.target.href;
         target = target.substring(target.indexOf("#")+1);
+        //$("body").toggleClass('mobile-menu-active');
+        $(".menu-toggle").trigger("click");
         $('html, body').animate({
           scrollTop: $("section > ."+target).offset().top
         }, 800, function(){
           // Add hash (#) to URL when done scrolling (default click behavior)
           //window.location.hash = "#"+target;
+          $("section > ."+target).scrollTop(50);
         });
       });
 
