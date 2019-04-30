@@ -170,7 +170,7 @@ $(document).ready(function(){
 
   $("#passwordButton").click(function(){
 
-    $.get("securecv.json",function(content){
+    $.get("securecv.enc",function(content){
       console.log("decoding...");
       var password = $("#password").val();
       var decrypted = crypto.decryptMessage(content,password);
