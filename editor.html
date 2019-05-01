@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta http-equiv="Access-Control-Allow-Headers" content="X-Requested-With" />
+    <title>Secure CV</title>
+    <link rel="stylesheet" href="css/fontawesome.css" >
+    <link rel="stylesheet" href="css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/owl.carousel.min.css" >
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" >
+    <link rel="stylesheet" href="css/app.css" >
+    <link rel="stylesheet" href="css/editor.css" >
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+
+  </head>
+  <body class="explore-pens logged-out not-team" >
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/aes.js"></script>
+    <script type="text/javascript" src="js/editor.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+
+    <section class="home-section">
+      <div class="tabs">
+          <header class="title-header pens-title-header">
+            <h1>AES Decoder</h1>
+          </header>
+          <div class="flex-field">
+            <input class="password-input" type="text" id="password" placeholder="Password"></input>
+            <input id="decodeButton" type="button" class="link-button button" value="Decode" onclick="decode();"></input>
+            <input id="encodeButton" type="button" class="link-button button" value="Encode" onclick="encode();"></input>
+          </div>
+          <div class="active group">
+            <div id="picks-grid" class="active pen-grid">
+
+              <div class="single-pen">
+
+                <div class="single-item single-collection">
+                  <div class="single-title-and-excerpt">
+                    <textarea id="decryptedTextArea" class="form-control textarea" ></textarea>
+                  </div>
+                  <div class="meta">
+                    <p>Decrypted</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="single-pen">
+
+                <div class="single-item single-collection">
+                  <div class="single-title-and-excerpt">
+                    <textarea id="encryptedTextArea" class="form-control textarea" ></textarea>
+                  </div>
+                  <div class="meta">
+                    <p>Encrypted</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Components
+    ===================================-->
+
+
+    <!-- Start Loading
+    ===================================-->
+    <div class="loading">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!-- End Loading ==================-->
+
+  </body>
+</html>

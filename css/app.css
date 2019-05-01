@@ -18,7 +18,7 @@
   background: rgba(44, 62, 80, 0.8);
 }
 
-.main-themeColor-bg, .sakura-btn:hover, .sakura-btn:focus, .sakura-btn:active, .sakura-btn.btn-inverse, .scrollToTop:hover, .bit-btn-1:before, .bit-icon-box-container .bit-icon-box:hover, .bit-icon-list-box:hover .bit-icon-box-container .bit-icon-box, .slide-menu-container .slide-menu.bit-menu-style-2 .bit-links li.active a i, .testimonials .testi-desc-box:before, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .bit-skills .technical-skills .progress-bar-container .progress.active .progress-bar, .bit-skills .technical-skills .progress-bar-container .progress .progress-bar.active, .bit-skills .technical-skills .progress-bar-container.primary-style .timer, .normal-post .entry-header .post-category a:hover, .normal-post .entry-header .post-share li a:hover, .normal-post .entry-header .post-share li span:hover, .normal-post .entry-header .post-share li span, .normal-post .entry-footer .entry-tags a:hover, .appsLand-navbar.active-navbar .menu-toggle .chart {
+.main-themeColor-bg, .bit-btn:hover, .bit-btn:focus, .bit-btn:active, .bit-btn.btn-inverse, .scrollToTop:hover, .bit-btn-1:before, .bit-icon-box-container .bit-icon-box:hover, .bit-icon-list-box:hover .bit-icon-box-container .bit-icon-box, .slide-menu-container .slide-menu.bit-menu-style-2 .bit-links li.active a i, .testimonials .testi-desc-box:before, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .bit-skills .technical-skills .progress-bar-container .progress.active .progress-bar, .bit-skills .technical-skills .progress-bar-container .progress .progress-bar.active, .bit-skills .technical-skills .progress-bar-container.primary-style .timer, .normal-post .entry-header .post-category a:hover, .normal-post .entry-header .post-share li a:hover, .normal-post .entry-header .post-share li span:hover, .normal-post .entry-header .post-share li span, .normal-post .entry-footer .entry-tags a:hover, .appsLand-navbar.active-navbar .menu-toggle .chart {
   background: #1894ff;
 }
 
@@ -26,7 +26,7 @@
   border-color: #1894ff;
 }
 
-.main-themeColor-bgRGBA, .sakura-demo2 .home .open-page a:hover {
+.main-themeColor-bgRGBA, .bit-demo2 .home .open-page a:hover {
   background: rgba(24, 148, 255, 0.5);
 }
 
@@ -34,14 +34,14 @@
   color: #BBB;
 }
 
-.main-shadow-1, .sakura-btn, .overlay-container, .control-bar, .slide-menu-container .slide-menu, .testimonials .testimonials-arrows, .testimonials .slick-dots i, .testimonials .testi-box, .testimonials .img-box img, .port-box .portfolio-items .portfolio-item, .port-box .portfolio-items .portfolio-item .port-data, .take-my-resume .bit-btn-1, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post:hover {
+.main-shadow-1, .bit-btn, .overlay-container, .control-bar, .slide-menu-container .slide-menu, .testimonials .testimonials-arrows, .testimonials .slick-dots i, .testimonials .testi-box, .testimonials .img-box img, .port-box .portfolio-items .portfolio-item, .port-box .portfolio-items .portfolio-item .port-data, .take-my-resume .bit-btn-1, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post:hover {
   -webkit-box-shadow: 0 0 25px 1px #1b2838;
   -o-box-shadow: 0 0 25px 1px #1b2838;
   -moz-box-shadow: 0 0 25px 1px #1b2838;
   box-shadow: 0 0 25px 1px #1b2838;
 }
 
-.main-shadow-2, .slide-menu-container .slide-menu.bit-menu-style-2 .bit-links li.active a i, .port-box .bit-taps, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .education-workHistory .timeline-content:before, .education-workHistory .timeline-content .timeline-box .timeline-date, .education-workHistory .timeline-content .timeline-box .timeline-info, .sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .client-logo a:hover {
+.main-shadow-2, .slide-menu-container .slide-menu.bit-menu-style-2 .bit-links li.active a i, .port-box .bit-taps, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .education-workHistory .timeline-content:before, .education-workHistory .timeline-content .timeline-box .timeline-date, .education-workHistory .timeline-content .timeline-box .timeline-info, .bit-demo2 .my-clients-logo .bit-demo2-clients-slider .client-logo a:hover {
   -webkit-box-shadow: 0 0 15px 0px #1b2838;
   -o-box-shadow: 0 0 15px 0px #1b2838;
   -moz-box-shadow: 0 0 15px 0px #1b2838;
@@ -56,7 +56,7 @@
   margin-bottom: -30px !important;
 }
 
-.sakura-btn {
+.bit-btn {
   cursor: pointer;
   border: none;
   -webkit-border-radius: 2px;
@@ -83,18 +83,18 @@
   -ms-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-.sakura-btn i {
+.bit-btn i {
   margin-right: 10px;
   display: inline-block;
 }
-.sakura-btn:hover, .sakura-btn:focus, .sakura-btn:active {
+.bit-btn:hover, .bit-btn:focus, .bit-btn:active {
   text-decoration: none;
   color: #FFFFFF;
 }
-.sakura-btn.btn-inverse {
+.bit-btn.btn-inverse {
   color: #FFFFFF;
 }
-.sakura-btn.btn-inverse:hover, .sakura-btn.btn-inverse:focus, .sakura-btn.btn-inverse:active {
+.bit-btn.btn-inverse:hover, .bit-btn.btn-inverse:focus, .bit-btn.btn-inverse:active {
   color: #333;
   background-color: #FFF;
 }
@@ -157,7 +157,7 @@
   display: block;
 }
 
-.demo_page.sakura-demo2 .home .overlay {
+.demo_page.bit-demo2 .home .overlay {
   padding-top: 150px !important;
   padding-bottom: 180px !important;
 }
@@ -254,7 +254,7 @@
   position: relative;
   overflow: hidden;
 }
-.demo_page .demos-section .demo-slider .sakura_nextArrow, .demo_page .demos-section .demo-slider .sakura_prevArrow {
+.demo_page .demos-section .demo-slider .bit_nextArrow, .demo_page .demos-section .demo-slider .bit_prevArrow {
   position: absolute;
   top: 50%;
   background: #FFF;
@@ -267,22 +267,22 @@
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.demo_page .demos-section .demo-slider .sakura_nextArrow:hover, .demo_page .demos-section .demo-slider .sakura_prevArrow:hover {
+.demo_page .demos-section .demo-slider .bit_nextArrow:hover, .demo_page .demos-section .demo-slider .bit_prevArrow:hover {
   background: #1894ff;
   color: #FFFFFF;
 }
-.demo_page .demos-section .demo-slider .sakura_prevArrow {
+.demo_page .demos-section .demo-slider .bit_prevArrow {
   left: -70px;
   border-radius: 0 10px 10px 0;
 }
-.demo_page .demos-section .demo-slider .sakura_nextArrow {
+.demo_page .demos-section .demo-slider .bit_nextArrow {
   right: -70px;
   border-radius: 10px 0 0 10px;
 }
-.demo_page .demos-section .demo-slider:hover .sakura_prevArrow {
+.demo_page .demos-section .demo-slider:hover .bit_prevArrow {
   left: 0;
 }
-.demo_page .demos-section .demo-slider:hover .sakura_nextArrow {
+.demo_page .demos-section .demo-slider:hover .bit_nextArrow {
   right: 0;
 }
 .demo_page .demos-section .demos-sub-box .section-title {
@@ -302,7 +302,7 @@
   margin-left: 0;
   border-radius: 0;
 }
-.demo_page .sakura-demo2 .home .open-page:after, .demo_page .sakura-demo2 .home .open-page:before {
+.demo_page .bit-demo2 .home .open-page:after, .demo_page .bit-demo2 .home .open-page:before {
   background: #1b2838 !important;
 }
 
@@ -2267,7 +2267,7 @@ body {
 .appsLand-navbar .dropdown-menu > li > a:hover, .appsLand-navbar .dropdown-menu > li > a:focus {
   background: #EEE;
 }
-.appsLand-navbar .sakura-demo2-menu-toggle {
+.appsLand-navbar .bit-demo2-menu-toggle {
   cursor: pointer;
   padding: 8px;
   display: none;
@@ -2281,7 +2281,7 @@ body {
   z-index: 2;
   position: relative;
 }
-.appsLand-navbar .sakura-demo2-menu-toggle .chart {
+.appsLand-navbar .bit-demo2-menu-toggle .chart {
   display: block;
   width: 35px;
   height: 4px;
@@ -2292,24 +2292,24 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.appsLand-navbar .sakura-demo2-menu-toggle .chart:nth-child(2) {
+.appsLand-navbar .bit-demo2-menu-toggle .chart:nth-child(2) {
   margin: 6px 0;
 }
-.appsLand-navbar.sakura-demo2-mobile-menu-active .sakura-demo2-menu-toggle .chart:nth-child(2) {
+.appsLand-navbar.bit-demo2-mobile-menu-active .bit-demo2-menu-toggle .chart:nth-child(2) {
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
 }
-.appsLand-navbar.sakura-demo2-mobile-menu-active .sakura-demo2-menu-toggle .chart:first-child {
+.appsLand-navbar.bit-demo2-mobile-menu-active .bit-demo2-menu-toggle .chart:first-child {
   -webkit-transform: translateY(10px) rotate(45deg);
   -moz-transform: translateY(10px) rotate(45deg);
   -ms-transform: translateY(10px) rotate(45deg);
   -o-transform: translateY(10px) rotate(45deg);
   transform: translateY(10px) rotate(45deg);
 }
-.appsLand-navbar.sakura-demo2-mobile-menu-active .sakura-demo2-menu-toggle .chart:last-child {
+.appsLand-navbar.bit-demo2-mobile-menu-active .bit-demo2-menu-toggle .chart:last-child {
   -webkit-transform: translateY(-10px) rotate(-45deg);
   -moz-transform: translateY(-10px) rotate(-45deg);
   -ms-transform: translateY(-10px) rotate(-45deg);
@@ -2441,45 +2441,43 @@ body {
   color: #FFFFFF;
 }
 
-/* 13 Sakura Demo2
-*********************************************/
-.sakura-demo2 {
+.bit-demo2 {
   overflow: auto;
   color: #FFFFFF;
 }
-.sakura-demo2 .overlay {
+.bit-demo2 .overlay {
   background: rgba(11, 14, 18, 0.75);
 }
-.sakura-demo2 .main-page-content {
+.bit-demo2 .main-page-content {
   margin: 0;
   width: 100%;
   overflow: hidden;
 }
-.sakura-demo2 .main-page-content > section, .sakura-demo2 .main-page-content > div,
-.sakura-demo2 .main-page-content .overlay {
+.bit-demo2 .main-page-content > section, .bit-demo2 .main-page-content > div,
+.bit-demo2 .main-page-content .overlay {
   padding: 120px 0;
 }
-.sakura-demo2 .main-page-content > section.small-section, .sakura-demo2 .main-page-content > div.small-section,
-.sakura-demo2 .main-page-content .overlay.small-section {
+.bit-demo2 .main-page-content > section.small-section, .bit-demo2 .main-page-content > div.small-section,
+.bit-demo2 .main-page-content .overlay.small-section {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.sakura-demo2 .main-page-content > section.bg-img, .sakura-demo2 .main-page-content > div.bg-img,
-.sakura-demo2 .main-page-content .overlay.bg-img {
+.bit-demo2 .main-page-content > section.bg-img, .bit-demo2 .main-page-content > div.bg-img,
+.bit-demo2 .main-page-content .overlay.bg-img {
   padding-top: 0;
   padding-bottom: 0;
 }
-.sakura-demo2 .home {
+.bit-demo2 .home {
   position: relative;
   overflow: hidden;
 }
-.sakura-demo2 .home .open-page {
+.bit-demo2 .home .open-page {
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
 }
-.sakura-demo2 .home .open-page a {
+.bit-demo2 .home .open-page a {
   font-size: 35px;
   display: block;
   color: #FFF;
@@ -2489,13 +2487,13 @@ body {
   -ms-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-.sakura-demo2 .home .open-page a i {
+.bit-demo2 .home .open-page a i {
   line-height: 1;
   display: inline-block;
   position: relative;
   bottom: 5px;
 }
-.sakura-demo2 .home .open-page:after, .sakura-demo2 .home .open-page:before {
+.bit-demo2 .home .open-page:after, .bit-demo2 .home .open-page:before {
   content: '';
   display: block;
   width: 50%;
@@ -2504,7 +2502,7 @@ body {
   position: absolute;
   bottom: 0;
 }
-.sakura-demo2 .home .open-page:before {
+.bit-demo2 .home .open-page:before {
   left: 0;
   transform: skew(45deg);
   -webkit-transform-origin: bottom right;
@@ -2513,7 +2511,7 @@ body {
   -ms-transform-origin: bottom right;
   transform-origin: bottom right;
 }
-.sakura-demo2 .home .open-page:after {
+.bit-demo2 .home .open-page:after {
   right: 0;
   transform: skew(-45deg);
   -webkit-transform-origin: bottom left;
@@ -2522,35 +2520,35 @@ body {
   -ms-transform-origin: bottom left;
   transform-origin: bottom left;
 }
-.sakura-demo2 .home .overlay {
+.bit-demo2 .home .overlay {
   padding-top: 195px;
   padding-bottom: 150px;
 }
-.sakura-demo2 .home .overlay .intro-section {
+.bit-demo2 .home .overlay .intro-section {
   width: auto;
   margin: auto;
 }
-.sakura-demo2 .home .overlay .header-links {
+.bit-demo2 .home .overlay .header-links {
   margin-top: 50px;
   margin-bottom: 0;
   margin-left: -10px;
   text-align: center;
 }
-.sakura-demo2 .home .overlay .header-links > li {
+.bit-demo2 .home .overlay .header-links > li {
   display: inline-block;
   padding-right: 10px;
   padding-left: 10px;
 }
-.sakura-demo2 .testimonials {
+.bit-demo2 .testimonials {
   background: #1b2838;
 }
-.sakura-demo2 .my-clients-logo {
+.bit-demo2 .my-clients-logo {
   overflow: hidden;
 }
-.sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .slick-list {
+.bit-demo2 .my-clients-logo .bit-demo2-clients-slider .slick-list {
   overflow: visible;
 }
-.sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .client-logo a {
+.bit-demo2 .my-clients-logo .bit-demo2-clients-slider .client-logo a {
   background: none;
   padding: 35px;
   opacity: 1;
@@ -2560,14 +2558,14 @@ body {
   -ms-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-.sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .client-logo a:hover {
+.bit-demo2 .my-clients-logo .bit-demo2-clients-slider .client-logo a:hover {
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -o-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-.sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .client-logo a:focus {
+.bit-demo2 .my-clients-logo .bit-demo2-clients-slider .client-logo a:focus {
   outline: none;
 }
 
@@ -2679,23 +2677,23 @@ body {
     padding: 10px 0;
   }
 
-  .sakura-demo2 .main-page-content > section, .sakura-demo2 .main-page-content > div,
-  .sakura-demo2 .main-page-content .overlay {
+  .bit-demo2 .main-page-content > section, .bit-demo2 .main-page-content > div,
+  .bit-demo2 .main-page-content .overlay {
     padding: 80px 0;
   }
-  .sakura-demo2 .main-page-content > section.small-section, .sakura-demo2 .main-page-content > div.small-section,
-  .sakura-demo2 .main-page-content .overlay.small-section {
+  .bit-demo2 .main-page-content > section.small-section, .bit-demo2 .main-page-content > div.small-section,
+  .bit-demo2 .main-page-content .overlay.small-section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .sakura-demo2 .home .intro-section .mr-bit {
+  .bit-demo2 .home .intro-section .mr-bit {
     font-size: 55px;
     margin: 10px 0;
   }
-  .sakura-demo2 .home .intro-section h3 {
+  .bit-demo2 .home .intro-section h3 {
     font-size: 19px !important;
   }
-  .sakura-demo2 .home .overlay {
+  .bit-demo2 .home .overlay {
     padding-top: 195px;
     padding-bottom: 150px;
   }
@@ -2933,7 +2931,7 @@ body {
   .appsLand-navbar .navbar-header {
     margin: 0;
   }
-  .appsLand-navbar .sakura-demo2-menu-toggle {
+  .appsLand-navbar .bit-demo2-menu-toggle {
     display: block;
   }
   .appsLand-navbar .app-links {
@@ -3008,10 +3006,10 @@ body {
     margin: 0;
     height: 100%;
   }
-  .appsLand-navbar.sakura-demo2-mobile-menu-active .app-links {
+  .appsLand-navbar.bit-demo2-mobile-menu-active .app-links {
     visibility: visible;
   }
-  .appsLand-navbar.sakura-demo2-mobile-menu-active .app-links .navbar-nav {
+  .appsLand-navbar.bit-demo2-mobile-menu-active .app-links .navbar-nav {
     left: 0;
   }
 }
