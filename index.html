@@ -1,92 +1,67 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
-    <meta http-equiv="Access-Control-Allow-Headers" content="X-Requested-With" />
-    <title>Secure CV</title>
-    <link rel="stylesheet" href="css/fontawesome.css" >
+	<head>
+		<title>SecureCV 2.0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="css/jquery-ui.min.css" >
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/owl.carousel.min.css" >
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" >
-    <link rel="stylesheet" href="css/app.css" >
-    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+	</head>
+	<body class="homepage is-preload">
 
-  </head>
-  <body data-spy="scroll" data-target=".navbar-scrolled" data-offset="0" class="scrollspy-example">
+		<div id="page-wrapper">
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/aes.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+			<!-- Header -->
+			<section id="header">
 
-    <aside class="bit-aside">
-      <!-- control bar -->
-      <div class="control-bar">
-          <div class="text-center">
-              <span class="menu-toggle">
-                  <i class="chart"></i>
-                  <i class="chart"></i>
-                  <i class="chart"></i>
-              </span>
-          </div>
-          <p class="copyright">
-              <a href="https://bitstuffing.github.io">Bit</a> - &copy; <i class="fa fa-heart"></i> <span id="test1">La privacidad viene de serie</span> <span id="test2"></span>
-          </p>
-      </div>
+				<h1><a href="index.html">SecureCV 2.0</a></h1>
 
-      <!-- Start SlideMenu
-      ===================================-->
-      <div class="slide-menu-container">
-          <!-- start the right menu -->
-          <div id="menuTogglable" class="slide-menu menu-opend navbar-scrolled bit-menu-style-2">
+				<nav id="nav">
+					<ul></ul>
+				</nav>
+				<br />
+			</section>
 
-              <div class="nav">
-                  <!-- Start Menu Links -->
-                  <ul id="ulSectionNav" class="list-unstyled bit-links"></ul>
-                  <!-- End Menu Links -->
-              </div>
-          </div>
-          <!-- start the right menu -->
-      </div>
-      <!-- End SlideMenu ================-->
-  </aside>
+	    <section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<!-- Copyright -->
+								<div id="copyright">
+									<ul class="links">
+										<li><a href="https://bitstuffing.github.io">Bit</a> - &copy; <i class="fa fa-heart"></i> <span id="test1">La privacidad viene de serie</span> <span id="test2"></span></li>
+									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  <main id="mainTag" class="main-page-content">
-
-  </main>
-
-  <!-- Components -->
-
-  <div id="dialogs" style="display:none;">
-    <div id="dialog" title="Put password here">
-      <fieldset>
-        <div class="form-group">
-          <p>Este SecureCV requiere password</p>
-          <label for="password">Password:</label>
-          <input type="text" class="form-control" id="password">
-        </div>
-        <button type="button" class="btn btn-primary" id="passwordButton">Decode</button>
-      </fieldset>
     </div>
-  </div>
 
-  <!-- Start Loading
-  ===================================-->
-  <div class="loading">
-      <div class="sk-folding-cube">
-          <div class="sk-cube1 sk-cube"></div>
-          <div class="sk-cube2 sk-cube"></div>
-          <div class="sk-cube4 sk-cube"></div>
-          <div class="sk-cube3 sk-cube"></div>
+    <!-- Components -->
+    <div id="dialogs" style="display:none;">
+      <div id="dialog" title="Put password here" style="padding:0 !important;">
+        <fieldset>
+          <div class="form-group">
+            <p>Este SecureCV requiere password</p>
+            <label for="password">Password:</label>
+            <input type="text" class="form-control" id="password">
+          </div>
+          <button type="button" class="btn btn-primary" id="passwordButton">Decode</button>
+        </fieldset>
       </div>
-  </div>
-  <!-- End Loading ==================-->
+    </div>
 
-  </body>
+		<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+    <script type="text/javascript" src="js/aes.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
