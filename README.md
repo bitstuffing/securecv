@@ -3,17 +3,21 @@
 
 ## Why?
 Some people are being forced to use new technologies and show his skills to all world, and this situation forces people to not have privacy.
+
 SecureCV is a little project with a partial solution about this issue without big technological implications.
+
 Now in 2.0 rev. SecureCV was designed to publish online your CV thinking on share a web safely, no crawler or unauthorized information will be automatically ingested to online databases without your known because all is encrypted.
+
+## Advantages
 
 There are some advantages about use SecureCV in his 2.0 rev:
 
 - No server is needed
-- Responsible, portable and with modern design.
-- Modify and revoke access will not be a problem.
+- Responsive, portable and with modern design.
+- Author is able to modify and revoke access, it will not be a problem.
 - Easy to share, you're able to use a simple QR code or write the url and password, is simple.
-- Client based logic instead servers logic, forget about vulnerabilities and other issues.
-- Easy to change, content is detached from view.
+- Client-based logic instead traditional servers logic, forget about vulnerabilities and other issues.
+- Easy to change, data is detached from view.
 
 ## Features
 
@@ -22,9 +26,11 @@ There are some advantages about use SecureCV in his 2.0 rev:
 
 ## How it works?
 
-All sensible information is stored in one simple file, and this file is encrypted by secure AES algorithm.
+All sensitive information is stored in one simple file and this file is encrypted by secure AES algorithm.
+
 You could use the editor to see his guts and how it's working, but basically, content is encrypted and needs to be unencrypted. Modern browsers are able to do this task in milliseconds.
-This solution was designed in the past by the author @bitstuffing to get a anticrawler site, and this view-based-solution algorithm  was implemented on SecureCV
+
+This solution was designed in the past by the author @bitstuffing to get an anticrawler site, and this view-based-solution algorithm  was implemented on SecureCV.
 
 ## License
 SecureCV in all versions is coded by @bitstuffing and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
