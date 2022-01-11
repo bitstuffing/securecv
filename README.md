@@ -2,7 +2,7 @@
 ## Publishing your Curriculum vitae in a secure way
 
 ## Why?
-Some people is being forced to use new technologies and show his skills to all world, and this situation forces people to not have privacy.
+Some people are being forced to use new technologies and show his skills to all world, and this situation forces people to not have privacy.
 SecureCV is a little project with a partial solution about this issue without big technological implications.
 Now in 2.0 rev. SecureCV was designed to publish online your CV thinking on share a web safely, no crawler or unauthorized information will be automatically ingested to online databases without your known because all is encrypted.
 
