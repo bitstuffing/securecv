@@ -1,0 +1,16 @@
+
+.centered{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    text-decoration: none;
+}
+
+ion-footer{
+    background-color: #121212;
+    font-style: italic;
+    font-size: 0.8em;
+}
