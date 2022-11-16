@@ -33,10 +33,10 @@ All sensitive information is stored in one simple file and this file is encrypte
 
 You could use the editor to see his guts and how it's working, but basically, content is encrypted and needs to be unencrypted. Modern browsers are able to do this task in milliseconds.
 
-This solution was designed in the past by the author @bitstuffing to get an anticrawler site, and this view-based-solution algorithm  was implemented on SecureCV.
+This solution was designed in the past by the author @bitstuffing to get an anticrawler site, and this view-based-solution algorithm was implemented on SecureCV.
 
 ## License
-SecureCV in all versions is coded by @bitstuffing and licensed under [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/). The same situation happens with the information (also encrypted one), so in an summary you're not authorized to use that information and the application in commercial environments without explicit authorization of the author.
+SecureCV in all versions is coded by @bitstuffing and licensed under [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/). The same situation happens with the information (also encrypted one), so in a summary you're not authorized to use that information and the application in commercial environments without explicit authorization of the author.
 
 ##### Powered by [![N|CryptoJS](https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2Fcryptojs.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-28427.appspot.com%2Fo%2Fspaces%252F-LVOh1OI8lhWfR_994H2%252Favatar.png%3Fgeneration%3D1546620224707409%26alt%3Dmedia)](https://cryptojs.gitbook.io/docs/)
 
@@ -44,7 +44,7 @@ SecureCV in all versions is coded by @bitstuffing and licensed under [Creative C
 
 I will try to dev a tree.js effect to demostrate some skills.
 
-### libraries
+##### some dev libraries involved in the process
 
 npm install three --save
 npm install @types/three --save
