@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/securecv/static/css/main.30ce1c9f.css",
+    "main.js": "/securecv/static/js/main.99f1fa66.js",
+    "static/js/738.2d3a3239.chunk.js": "/securecv/static/js/738.2d3a3239.chunk.js",
+    "static/js/372.325cefbf.chunk.js": "/securecv/static/js/372.325cefbf.chunk.js",
+    "static/js/856.ae2d2aa4.chunk.js": "/securecv/static/js/856.ae2d2aa4.chunk.js",
+    "static/js/851.8b6ba098.chunk.js": "/securecv/static/js/851.8b6ba098.chunk.js",
+    "static/js/22.e92e47fd.chunk.js": "/securecv/static/js/22.e92e47fd.chunk.js",
+    "static/js/272.14cf53ca.chunk.js": "/securecv/static/js/272.14cf53ca.chunk.js",
+    "static/js/841.f54b4670.chunk.js": "/securecv/static/js/841.f54b4670.chunk.js",
+    "static/js/186.0b394cfe.chunk.js": "/securecv/static/js/186.0b394cfe.chunk.js",
+    "static/js/377.b654588f.chunk.js": "/securecv/static/js/377.b654588f.chunk.js",
+    "service-worker.js": "/securecv/service-worker.js",
+    "index.html": "/securecv/index.html",
+    "main.30ce1c9f.css.map": "/securecv/static/css/main.30ce1c9f.css.map",
+    "main.99f1fa66.js.map": "/securecv/static/js/main.99f1fa66.js.map",
+    "738.2d3a3239.chunk.js.map": "/securecv/static/js/738.2d3a3239.chunk.js.map",
+    "372.325cefbf.chunk.js.map": "/securecv/static/js/372.325cefbf.chunk.js.map",
+    "856.ae2d2aa4.chunk.js.map": "/securecv/static/js/856.ae2d2aa4.chunk.js.map",
+    "851.8b6ba098.chunk.js.map": "/securecv/static/js/851.8b6ba098.chunk.js.map",
+    "22.e92e47fd.chunk.js.map": "/securecv/static/js/22.e92e47fd.chunk.js.map",
+    "272.14cf53ca.chunk.js.map": "/securecv/static/js/272.14cf53ca.chunk.js.map",
+    "841.f54b4670.chunk.js.map": "/securecv/static/js/841.f54b4670.chunk.js.map",
+    "186.0b394cfe.chunk.js.map": "/securecv/static/js/186.0b394cfe.chunk.js.map",
+    "377.b654588f.chunk.js.map": "/securecv/static/js/377.b654588f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30ce1c9f.css",
+    "static/js/main.99f1fa66.js"
+  ]
+}
