@@ -44,6 +44,10 @@ SecureCV in all versions is coded by @bitstuffing and licensed under [Creative C
 
 I will try to dev a tree.js effect to demostrate some skills.
 
+## Matrix effect
+
+I will give thanks to [Janko Sokolović](https://itnext.io/matrix-code-animation-in-react-96daeee65d3e) for this explanation to implement the Matrix code simulation effect.
+
 ##### some dev libraries involved in the process
 
 npm install --save @types/jquery
@@ -55,6 +59,8 @@ npm install crypto-js --save
 npm install buffer
 
 npm install gh-pages
+
+npm install todash
 
 ##### (WIP)
 

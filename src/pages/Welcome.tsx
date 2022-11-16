@@ -8,7 +8,7 @@ const Welcome: React.FC<RouteComponentProps> = ({ match }) => {
     <IonPage>
       <IonHeader>
         <IonToolbar class="centered">
-          <IonTitle >SecureCV 3.0</IonTitle>
+          <IonTitle ><a href="https://github.com/bitstuffing/securecv">SecureCV 3.0</a></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen class="justified">
