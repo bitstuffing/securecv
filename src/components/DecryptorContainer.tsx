@@ -2,21 +2,30 @@ import './DecryptorContainer.css';
 
 import React, { useState, useEffect }  from 'react';
 import { IonLoading, IonContent } from '@ionic/react';
-import { useIonAlert , useIonViewWillEnter, useIonViewDidEnter, useIonViewWillLeave } from '@ionic/react';
+import { useIonAlert, useIonViewDidEnter /*, useIonViewWillEnter, useIonViewWillLeave*/ } from '@ionic/react';
 
 import * as $ from "jquery";
-import { logger } from 'workbox-core/_private';
+//import { logger } from 'workbox-core/_private';
 import { RouteComponentProps } from 'react-router';
 
 import { Buffer } from 'buffer'
 
+import Matrix from './Matrix';
+
 var AES = require("crypto-js/aes");
 var CryptoJS = require("crypto-js");
 
+
+/** Needs p param to work with QR generated in 1.x and 2.x revs */
 interface ContainerProps extends RouteComponentProps<{
   p: string;
 }> {}
 
+
+/**
+ * Main component with all the magic, calls to Matrix component, 
+ * AlertDialog and Crypto Logic
+ */
 const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
 
   const [presentAlert] = useIonAlert();
@@ -24,7 +33,7 @@ const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
   const [showLoading, setShowLoading] = useState(false);
   let isWorking = false;
   const [showAlert, setShowAlert] = useState(false);
-  const [unencryptedContent, setUnencryptedContent] = useState('Always share your personal information in a secure way');
+  //const [unencryptedContent, setUnencryptedContent] = useState('');
   const [dialogHeader, setDialogHeader] = useState('Password required!');
 
   //RouteComponentProps issues from rect-router, so needs a callback from useEffect
@@ -59,7 +68,9 @@ const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
   return (
     <IonContent>
       <div id="mainContainer" className="pre-container">
-        <div id="childMainContainer">{unencryptedContent}</div>
+        <div id="childMainContainer">
+          <Matrix />
+        </div>
       </div>
       <IonLoading
         cssClass="loading"
@@ -70,7 +81,7 @@ const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
             setShowLoading(false);
             
             var a = presentAlert({
-              header: 'SecureCV 3.0',
+              header: 'The safe is locked',
               subHeader: dialogHeader,
               //dismiss
               backdropDismiss : false,
@@ -90,7 +101,7 @@ const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
                   handler: (alertData) => {
                     setShowAlert(false);
                     setShowLoading(false);
-                    setUnencryptedContent(alertData.password);
+                    //setUnencryptedContent(alertData.password);
                     unEncrypt(alertData.password);
                     return true;
                   }
