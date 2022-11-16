@@ -46,9 +46,18 @@ I will try to dev a tree.js effect to demostrate some skills.
 
 ##### some dev libraries involved in the process
 
-npm install three --save
-npm install @types/three --save
 npm install --save @types/jquery
+
 npm install jquery --save
+
 npm install crypto-js --save
+
 npm install buffer
+
+npm install gh-pages
+
+##### (WIP)
+
+npm install three --save
+
+npm install @types/three --save

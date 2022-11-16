@@ -28,9 +28,9 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/welcome" component={Welcome} />
-        <Redirect exact from="/p=:p" to="/welcome/:p" />
-        <Redirect exact from="/" to="/welcome" />
+        <Route path="/securecv" component={Welcome} />
+        <Redirect exact from="/p=:p" to="/securecv/:p" />
+        <Redirect exact from="/" to="/securecv" />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

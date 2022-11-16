@@ -30,9 +30,19 @@ const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
   //RouteComponentProps issues from rect-router, so needs a callback from useEffect
   useEffect(() => {
     if(!isWorking){
+      let password = "";
       if (match.params.p){
+        password = match.params.p;
+      }
+      if(password.length<=0){
+        let url = window.location.href;
+        if(url.includes("=")){
+          password = window.location.href.split("=")[1];
+          password = decodeURIComponent(password);
+        }
+      }
+      if (password.length>0){
         isWorking = true;
-        let password = match.params.p;
         password = Buffer.from(password,'base64').toString('utf-8');
         unEncrypt(password);
       }else{
@@ -96,7 +106,7 @@ const DecryptorContainer: React.FC<ContainerProps> = ({ match }) => {
   );
 
 function unEncrypt(password: string, alertWrongPassword = true){
-  $.get("/cv.enc",function(data){
+  $.get("/securecv/cv.enc",function(data){
     var temp = document.createElement("div");
     temp.setAttribute("id","app-container");
     try{ //unencrypt part
