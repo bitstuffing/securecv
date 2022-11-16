@@ -128,7 +128,6 @@ function unEncrypt(password: string, alertWrongPassword = true){
       }
       setShowLoading(true);
     }
-    logger.debug("finished!");
     isWorking = false;
   });
 }
