@@ -125,8 +125,15 @@ function unEncrypt(password: string, alertWrongPassword = true){
       data = decryptedBytes.toString(CryptoJS.enc.Utf8);
       if(data.length>0){
         temp.innerHTML = data;
-        document.getElementById("childMainContainer")?.replaceWith(temp);
+        var child = document.getElementById("childMainContainer");
+        //child?.setAttribute("style","opacity: 0;");
+        child?.classList.add('fade-out');
         document.getElementById('mainContainer')?.setAttribute("class","");
+        setTimeout(function(){
+          child?.classList.add('fade-in');
+          child?.replaceWith(temp);
+        },1000);
+        
       }else{
         if(alertWrongPassword){
           setDialogHeader("Wrong password, try again");
