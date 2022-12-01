@@ -1,0 +1,7 @@
+{
+  "name": "securecv",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
